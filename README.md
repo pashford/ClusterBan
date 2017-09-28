@@ -8,4 +8,4 @@ Because of its design, ClusterBan has the ability to block some zero-day attacks
 
 Current status - Initial design
 
-This project is licensed under the terms of the original BSD 4-clause license.
+This project is licensed under the terms of the original BSD 4-clause license.  Please see the "LICENSE" file for details.
