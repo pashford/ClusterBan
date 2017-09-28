@@ -1,11 +1,9 @@
 # ClusterBan
 
-ClusterBan identifies attacks and scans through a combination of log scanning, using the "Fail2Ban" Open-Source Software, and custom functionality similar to a "Honey-Pot".
+ClusterBan identifies attacks and scans through a combination of log scanning, using the "Fail2Ban" Open-Source Software, and custom functionality similar to a "Honey-Pot".  When ClusterBan identifies a scanor an attack, it bans the source address throughout the entire cluster.
 
-Most of the blocking is temporary, but it can be set to permanently block persistent threats.
+The initial bans of an IP address are temporary, but persistent attacks can be converted to permanent.
 
-When threats are identified, the source IP address is banned in the Service Cluster.         
-
-Because of its design, ClusterBan has the ability to block some zero-day attacks.
+Because of its design, ClusterBan has the ability to block some zero-day attacks.  In addition, it can be configured to block DDoS attacks at the Load Balancer.
 
 Current status - Initial design
