@@ -7,7 +7,7 @@
 #include <errno.h>
 #include <string.h>
 
-#include "common.h"
+#include "cb_lib.h"
 
 /*
  * Allocate a Thread structure and link it into the chain.
@@ -23,7 +23,7 @@ int alloc_thread(int port, char t_type) {
     thread_root = (struct threads *) malloc(sizeof(struct threads));
     if(thread_root == NULL) {
     	thread_root = old_root;
-	cb_process_error(ERROR_MAJOR, "Error allocating thread structure", errno);
+	cb_process_error(CB_ERROR_MAJOR, "Error allocating thread structure", errno);
 	return(1);
     }
     /* The new entry is placed at the head of the list */
